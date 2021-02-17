@@ -1,0 +1,47 @@
+main {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top right, plum, white);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2 {
+  margin: 20px;
+  font-size: 20px;
+  color: rebeccapurple;
+  text-transform: uppercase;
+}
+
+.students {
+  width: 15vw;
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px gainsboro;
+  padding: 5px;
+  margin: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button button {
+  width: 5vw;
+  height: 5vh;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
+}
