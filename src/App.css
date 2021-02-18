@@ -3,7 +3,6 @@
 }
 
 main {
-  height: 50vh;
   background: linear-gradient(to top right, plum, white);
 }
 
@@ -49,4 +48,9 @@ nav a img {
   width: 5vw;
   height: 10vh;
   border-radius: 50%;
+}
+
+.Body {
+  margin-top: 50px;
+  text-align: center;
 }

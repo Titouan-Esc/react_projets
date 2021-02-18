@@ -3,6 +3,7 @@ import "./App.css";
 import data from "./data";
 import NavBar from "./components/NavBar";
 import Person from "./components/Person";
+import Body from "./components/Body";
 
 function App() {
   const [anonyme, setAnonyme] = useState(data);
@@ -12,6 +13,7 @@ function App() {
       <div className="bas">
         <Person anonyme={anonyme} />
       </div>
+      <Body />
     </main>
   );
 }
