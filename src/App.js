@@ -1,16 +1,25 @@
 import React, { useState } from "react";
 import "./App.css";
 import data from "./data";
-import List from "./components/List";
 import NavBar from "./components/NavBar";
+import Person from "./components/Person";
 
 function App() {
-  const [student, setStudent] = useState(data);
-
+  const [anonyme, setAnonyme] = useState(data);
   return (
     <main>
       <NavBar />
-      <section className="container">
+      <div className="bas">
+        <Person anonyme={anonyme} />
+      </div>
+    </main>
+  );
+}
+
+export default App;
+
+// const [student, setStudent] = useState(data);
+/* <section className="container">
         <div className="button">
           <button onClick={() => setStudent([])}>Clique</button>
         </div>
@@ -21,9 +30,4 @@ function App() {
         <div className="button">
           <button onClick={() => setStudent([])}>Clear list</button>
         </div>
-      </section>
-    </main>
-  );
-}
-
-export default App;
+      </section> */

@@ -1,67 +1,41 @@
 export default [
   {
     id: 1,
-    name: "Thomas Le Bris",
-    attendance: true,
+    name: "Titouan le bg",
+    description:
+      "Beau jeune homme de très grande taille et bordel qu'il est cool ce batard de ses morts",
   },
 
   {
     id: 2,
-    name: "Titouan Escorneboueü",
-    attendance: true,
+    name: "Gege le daron de titou",
+    description:
+      "Que dire de lui, juste il a creer l'homme le plus beau de tous donc Titouan",
   },
 
   {
     id: 3,
-    name: "Julien Pardoel",
-    attendance: true,
+    name: "Fred",
+    description: "Le plombier de ma residence secondaire",
   },
 
   {
     id: 4,
-    name: "Corentin Le Berre",
-    attendance: true,
+    name: "Heude",
+    description:
+      "Le jardiner mais bon il passe la plus part de son temps à ne rien foutre comme les cheminots",
   },
 
   {
     id: 5,
-    name: "Sébastien Avenet",
-    attendance: true,
+    name: "Franck",
+    description: "Le professeur de guitare ainsi que de solfège de Titouan",
   },
 
   {
     id: 6,
-    name: "Anthony",
-    attendance: true,
-  },
-
-  {
-    id: 7,
-    name: "Redouan",
-    attendance: false,
-  },
-
-  {
-    id: 8,
-    name: "Houria",
-    attendance: true,
-  },
-
-  {
-    id: 9,
-    name: "Joseph",
-    attendance: false,
-  },
-
-  {
-    id: 10,
-    name: "Charlotte",
-    attendance: true,
-  },
-
-  {
-    id: 11,
-    name: "Karim",
-    attendance: true,
+    name: "Jack Sparrow",
+    description:
+      "Le meilleur ami de Titouan étant donné qu'il est pirate c'est encore mieux bordel",
   },
 ];

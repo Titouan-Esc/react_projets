@@ -1,5 +1,3 @@
-import React from "react";
-
 const NavBar = () => {
   return (
     <nav>
@@ -10,7 +8,7 @@ const NavBar = () => {
         />
       </a>
       <div>
-        <a href="">Projets</a>
+        <a href="Person.jsx">Projets</a>
         <a href="">Contact</a>
       </div>
     </nav>
