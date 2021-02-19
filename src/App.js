@@ -1,14 +1,6 @@
-// ! Importation de useState pour pouvoir modifier le contenu que je souhaite
-import React, { useState } from "react";
 import "./App.css";
-// ! Importation de mes données pour ma boucle
-import data from "./data";
 // ! Importation de ma Nav Bar
 import NavBar from "./components/NavBar";
-// ! Importation de mon component Person
-import Person from "./components/Person";
-// ! Importation de mon component Body
-import Body from "./components/Body";
 // ! Importation pour le Router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // ! Importation de mes pages en js
@@ -16,26 +8,34 @@ import Home from "./pages/Home";
 import Projets from "./pages/Projets";
 import Contact from "./pages/Contact";
 
+// ! Creation d'une variable pour nos routes au lieu de les appler une par une
+const routes = [
+  { path: "/", name: "Home", Component: Home },
+  { path: "/projets", name: "Projets", Component: Projets },
+  { path: "/contact", name: "Contact", Component: Contact },
+];
+
 function App() {
   // ? Déclaration d'une constante pour le useState qui modiferie la data
-  const [anonyme, setAnonyme] = useState(data);
+
   return (
     // !Appel de la balise Route
     <Router>
       <main>
         <NavBar />
-        {/* Appel de la balise Switch donc ce qui va changer */}
         <Switch>
-          {/* Appel de la balise Route ou je vais faire le lien avec ma page js */}
-          <Route path="/" exact component={Home}>
-            <div className="bas">
-              {/* Appel de ma constante */}
-              <Person anonyme={anonyme} />
-            </div>
-            <Body />
-          </Route>
-          <Route path="/projets" component={Projets} />
-          <Route path="/contact" component={Contact} />
+          {/* On appel notre const avec le point map pour faire une boucle puis y passer les arguments path et component */}
+          {routes.map(({ path, Component }) => (
+            // ! Creation de la balise Route puis de la key qui a le path et le path qui est égale à path
+            <Route key={path} exact path={path}>
+              {/* Appel d'une fonction fléché qui a pour argument match */}
+              {() => (
+                <>
+                  <Component />
+                </>
+              )}
+            </Route>
+          ))}
         </Switch>
       </main>
     </Router>

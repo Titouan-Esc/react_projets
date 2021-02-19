@@ -1,8 +1,17 @@
+import Person from "../components/Person";
+import Body from "../components/Body";
+import React, { useState } from "react";
+import data from "../data";
+
 const Home = () => {
+  const [anonyme, setAnonyme] = useState(data);
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <div className="bas">
+        <Person anonyme={anonyme} />
+      </div>
+      <Body />
+    </>
   );
 };
 
