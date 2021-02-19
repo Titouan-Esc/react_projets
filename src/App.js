@@ -27,16 +27,16 @@ function App() {
         {/* Appel de la balise Switch donc ce qui va changer */}
         <Switch>
           {/* Appel de la balise Route ou je vais faire le lien avec ma page js */}
-          <Route path="/" component={Home}>
+          <Route path="/" exact component={Home}>
             <div className="bas">
               {/* Appel de ma constante */}
               <Person anonyme={anonyme} />
             </div>
+            <Body />
           </Route>
           <Route path="/projets" component={Projets} />
           <Route path="/contact" component={Contact} />
         </Switch>
-        <Body />
       </main>
     </Router>
   );

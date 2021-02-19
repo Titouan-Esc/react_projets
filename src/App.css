@@ -35,7 +35,11 @@ nav {
   border-radius: 50px;
 }
 
-nav a {
+nav div {
+  display: flex;
+}
+
+nav div p {
   margin: 0 10px;
 }
 
